@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Código Secreto - Inicio</title>
+    <title>Acerca de | Código Secreto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/about.css">
 </head>
 <body>
 <header>
@@ -25,27 +25,23 @@
 </header>
 
 <main>
-    <section class="intro__container">
-        <h1>Bienvenido a Código Secreto</h1>
+    <section class="about__container">
+        <h1>Razón del proyecto</h1>
         <p>
-            Código Secreto es un juego interactivo donde tu objetivo es adivinar un número secreto entre 1 y 100 en la menor cantidad de intentos posible. Pon a prueba tu lógica y desafía a tus amigos.
+            Este proyecto fue creado como un ejercicio de programación para practicar habilidades de desarrollo web y lógica de programación. El objetivo es crear un juego interactivo que desafíe a los jugadores a adivinar un número secreto.
+        </p>
+        <p>
+            El juego utiliza JavaScript para manejar la lógica, HTML para la estructura y CSS para el estilo visual. Es una excelente manera de aprender y aplicar conceptos básicos de programación y desarrollo web.
         </p>
     </section>
 
-    <section class="instructions__container">
-        <h2>¿Cómo jugar?</h2>
-        <ol>
-            <li>Ingresa un número entre 1 y 100.</li>
-            <li>Recibe pistas si el número es mayor o menor que el secreto.</li>
-            <li>¡Sigue intentando hasta descubrir el número secreto!</li>
-        </ol>
-    </section>
-
-    <section class="play__container">
-        <h2>¿Listo para jugar?</h2>
-        <button class="play-btn" id="playBtn">
-            <span>Jugar ahora</span>
-        </button>
+    <section class="dev__container">
+        <h2>Desarrollador</h2>
+        <p>
+            Este juego fue creado por Sebastian G.M.<br>
+            Puedes encontrar más información sobre mis proyectos en GitHub:
+            <a href="https://github.com/Sebastian-G-M" target="_blank">Sebastian G.M</a>
+        </p>
     </section>
 </main>
 
@@ -54,12 +50,5 @@
         <p class="footer__texto">© 2023 Código Secreto. Todos los derechos reservados. Actualizado 2025</p>
     </div>
 </footer>
-<script>
-    // Animación simple para el botón y redirección
-    document.getElementById('playBtn').addEventListener('click', function() {
-        this.classList.add('clicked');
-        setTimeout(() => window.location.href = './game.html', 300);
-    });
-</script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código Secreto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/game.css">
+</head>
+<body>
+<header>
+    <div class="header__container">
+        <img src="./img/trophy.png" alt="Logo" class="header__logo" />
+        <h1 class="header__titulo">Código secreto</h1>
+    </div>
+    <nav class="header__nav">
+        <ul class="header__lista">
+            <li class="header__item"><a href="./index.html">Inicio</a></li>
+            <li class="header__item"><a href="./game.html">Juego</a></li>
+            <li class="header__item"><a href="./about.html">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="game-container">
+        <div class="game-column">
+            <h2>Adivina el número secreto</h2>
+            <div class="game-input">
+                <input type="number" id="guessInput" placeholder="Ingresa tu número" min="1" max="100" />
+                <button id="guessBtn">Adivinar</button>
+            </div>
+            <div id="message" class="game-message"></div>
+            <div id="result" class="game-result"></div>
+        </div>
+        <div class="attempts-column">
+            <h3>Intentos</h3>
+            <ul id="attemptsList" class="attempts-list"></ul>
+        </div>
+    </div>
+</main>
+
+<script src="scrips/app.js"></script>
+<footer>
+    <div class="footer__container">
+        <p class="footer__texto">© 2023 Código Secreto. Todos los derechos reservados. Actualizado 2025</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f7faff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 32px 8px 32px;
+}
+
+.header__logo {
+    width: 48px;
+    height: 48px;
+}
+
+.header__titulo {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    color: #3b82f6;
+    margin: 0;
+}
+
+.header__nav {
+    padding: 0 32px 16px 32px;
+}
+
+.header__lista {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header__item a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.header__item a:hover {
+    color: #3b82f6;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.intro__container h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #3b82f6;
+    margin-bottom: 12px;
+}
+
+.instructions__container ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.play__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.play-btn {
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 36px;
+    font-size: 1.2em;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(59,130,246,0.10);
+    transition: background 0.2s, transform 0.2s;
+    outline: none;
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-btn.clicked {
+    background: #2563eb;
+    transform: scale(0.96);
+}
+
+footer {
+    margin-top: 40px;
+    background: #fff;
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.04);
+    padding: 16px 0;
+    text-align: center;
+}
+
+.footer__texto {
+    color: #64748b;
+    font-size: 1em;
+    margin: 0;
+}
